@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 800px;
+        height: 800px;
+        margin: 100px auto;
+        border:1px solid grey;
+        position: relative;
+    }
+    .move_on{
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+        left: 500px;
+        top: 390px;
+        background-color:rgb(92, 246, 182);
+        position: absolute;
+        animation: rolate 1s linear infinite;
+    }
+    #move_on1{
+        transform: rotate(45deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.12s infinite;
+    }
+    #move_on2{
+        transform: rotate(90deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.25s infinite;
+    }
+    #move_on3{
+        transform: rotate(135deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.37s infinite;
+    }
+    #move_on4{
+        transform: rotate(180deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.5s infinite;
+    }
+    #move_on5{
+        transform: rotate(225deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.67s infinite;
+    }
+    #move_on6{
+        transform: rotate(270deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.75s infinite;
+    }
+    #move_on7{
+        transform: rotate(315deg);
+        transform-origin: -100px 10px;
+        animation: rolate 1s linear 0.87s infinite;
+    }
+
+    .move_in{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: rgb(92, 246, 182);
+    }
+    @keyframes rolate{
+        form{
+            opacity: 1;
+        }
+        12%{
+            opacity: 0.87;
+        }
+        25%{
+            opacity: 0.75;
+        }
+        37%{
+            opacity: 0.67;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        63%{
+            opacity: 0.37;
+        }
+        75%{
+            opacity: 0.25;
+
+        }
+        87%{
+            opacity: 0.12;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="move_on">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on1">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on2">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on3">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on4">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on5">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on6">
+            <div class="move_in"></div>
+        </div>
+        <div class="move_on" id="move_on7">
+            <div class="move_in"></div>
+        </div>
+    </div>
+</body>
+</html>

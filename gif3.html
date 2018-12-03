@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        width: 200px;
+        height: 100px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    li{
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        /* background-color: aqua; */
+    }
+    span{
+        display: block;
+        widows: 20px;
+        height: 20px;
+        margin: auto auto;
+        border-radius: 50%;
+        background-color: rgb(113, 113, 223);
+    }/*li中放一个span，让span变化，li做框架 */
+    @keyframes light {
+        from{
+            opacity: 1;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+        }
+        /* 20%{
+            opacity: 0.5;
+        } */
+        20%{
+            opacity: 0.5;
+            width: 10px;
+            height: 10px;
+            margin: 5px;/* 此行设置为圆点居中 */
+        }
+        40%{
+            opacity: 0.1;
+            width: 2px;
+            height: 2px;
+            margin: 9px;
+        }
+        50%{
+            opacity: 0;
+            width: 0px;
+            height: 0px;
+            margin: 10px;
+        }
+        /* 80%{
+            opacity: 0;
+        } */
+        to{
+            opacity: 0;
+        }
+    }
+    .item1{
+        animation: light 1s ease-in infinite;
+    }
+    .item2{
+        animation: light 1s ease-in 0.1s infinite;
+    }
+    .item3{
+        animation: light 1s ease-in 0.2s infinite;
+    }
+    .item4{
+        animation: light 1s ease-in 0.3s infinite;
+    }
+    .item5{
+        animation: light 1s ease-in 0.4s infinite;
+    }
+    </style>
+</head>
+<body>
+        <ul>
+            <li><span class="item1"></span></li>
+            <li><span class="item2"></span></li>
+            <li><span class="item3"></span></li>
+            <li><span class="item4"></span></li>
+            <li><span class="item5"></span></li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 400px;
+        height: 20px;
+        margin: 50px auto;
+        border-radius: 10px;
+        background-color: rgb(162, 236, 181);
+        position: relative;
+        overflow: hidden;
+    }
+    .in_move{
+        position: absolute;
+        width: 50%;
+        height: 20px;
+        left: -200px;
+        background-color: rgb(123, 230, 230);
+        animation: move 1s linear infinite;
+    }
+    @keyframes move{
+        form{
+            left: -200px;
+        }
+        50%{
+            left: 100px;
+        }
+        to{
+            left: 400px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="in_move"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;/* 保持li处在中心轴线上 */
+            /* text-align: center; */
+        }
+        li{
+            list-style: none;
+            /* flex: 1; */
+            width: 10px;
+            height: 100px;
+            margin: 5px;
+            background-color: aqua;
+            border-radius: 5px;
+            /* animation: strench-1 1s ease-in infinite; */
+        }
+        li:first-child{
+            margin-left: 40px;
+        }
+    @keyframes strench-1{
+        from{
+ 
+            height: 100px;
+            
+        }
+        20%{
+            height: 80px;
+            
+        }
+        40%{
+            height: 60px;
+        }
+        50%{
+            height: 50px;
+            background-color: yellowgreen;
+        }
+        60%{
+            height: 60px;
+        }
+        80%{
+            height: 80px;
+        }
+        to{
+            height: 100px;
+        }
+
+    }
+    .item1{
+        animation: strench-1 1s ease-in infinite;
+    }
+    .item2{
+        animation: strench-1 1s ease-in 0.2s infinite;
+    }
+    .item3{
+        animation: strench-1 1s ease-in 0.4s infinite;
+    }
+    .item4{
+        animation: strench-1 1s ease-in 0.6s infinite;
+    }
+    .item5{
+        animation: strench-1 1s ease-in 0.8s infinite;
+    }
+
+    </style>
+</head>
+<body>
+    <ul class="item">
+    <li class="item1"></li>
+    <li  class="item2"></li>
+    <li  class="item3"></li>
+    <li  class="item4"></li>
+    <li  class="item5"></li>
+    </ul>
+</body>
+</html>
